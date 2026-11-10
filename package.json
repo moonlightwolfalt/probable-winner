@@ -6,7 +6,9 @@
     "fetch": "bun scripts/fetch-btd-data.ts",
     "fetch:btd5": "bun scripts/fetch-btd-data.ts --game btd5",
     "fetch:btd6": "bun scripts/fetch-btd-data.ts --game btd6",
-    "fetch:names": "bun scripts/fetch-btd-data.ts --no-images"
+    "fetch:names": "bun scripts/fetch-btd-data.ts --no-images",
+    "game:build": "bun game/build.ts",
+    "game:dev": "bun --watch game/build.ts"
   },
   "dependencies": {
     "pngjs": "^7.0.0"
