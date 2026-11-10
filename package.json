@@ -1,0 +1,18 @@
+{
+  "name": "probable-winner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "bun scripts/fetch-btd-data.ts",
+    "fetch:btd5": "bun scripts/fetch-btd-data.ts --game btd5",
+    "fetch:btd6": "bun scripts/fetch-btd-data.ts --game btd6",
+    "fetch:names": "bun scripts/fetch-btd-data.ts --no-images"
+  },
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pngjs": "^6.0.5"
+  }
+}
