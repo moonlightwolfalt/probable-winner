@@ -1,0 +1,186 @@
+[
+ {"id":"marble","name":"Marble Flinger","cost":200,"sprite":"marble","projColor":"#7fd1e8",
+  "desc":"Flicks a single marble at the nearest doll. Cheap and dependable.",
+  "base":{"kind":"shot","range":110,"cooldown":0.95,"damage":1,"pierce":1,"projSpeed":520,"dmgType":"sharp"},
+  "paths":[
+   {"name":"Keen Eye","upgrades":[
+    {"name":"Long Arm","cost":90,"desc":"Throws further.","add":{"range":25}},
+    {"name":"Eagle Squint","cost":130,"desc":"Throws further still.","add":{"range":25}},
+    {"name":"Steelies","cost":450,"desc":"Steel marbles crack 2 layers and pass through 3 dolls.","add":{"damage":1,"pierce":2}},
+    {"name":"Cannonball","cost":1600,"desc":"A huge marble that ploughs through 20 dolls and dents anything.","set":{"dmgType":"blunt","projSize":9},"add":{"damage":2,"pierce":17}},
+    {"name":"Wrecking Ball","cost":9000,"desc":"Flattens whole columns of dolls.","set":{"projSize":13},"add":{"damage":8,"pierce":40}}]},
+   {"name":"Quick Hands","upgrades":[
+    {"name":"Chalked Fingers","cost":140,"desc":"Flicks faster.","mul":{"cooldown":0.8}},
+    {"name":"Double Pouch","cost":170,"desc":"Each marble hits one more doll.","add":{"pierce":1}},
+    {"name":"Triple Flick","cost":380,"desc":"Three marbles per flick.","set":{"count":3,"spread":24}},
+    {"name":"Marble Storm","cost":2400,"desc":"A furious stream of marbles.","mul":{"cooldown":0.3}},
+    {"name":"Hundred Hands","cost":11000,"desc":"Five marbles per flick, twice as fast.","set":{"count":5,"spread":40},"mul":{"cooldown":0.5}}]},
+   {"name":"Trick Shots","upgrades":[
+    {"name":"Lantern Goggles","cost":120,"desc":"Can see veiled dolls.","set":{"seeVeiled":true}},
+    {"name":"Curve Ball","cost":220,"desc":"Marbles curve toward dolls and hit one more.","set":{"homing":true},"add":{"pierce":1}},
+    {"name":"Shatter Marbles","cost":700,"desc":"Marbles burst on impact.","set":{"splash":26}},
+    {"name":"Firework Marbles","cost":2600,"desc":"Bursts scatter into smaller bursts.","set":{"cluster":5,"dmgType":"blunt"},"add":{"splash":16}},
+    {"name":"Grand Display","cost":8500,"desc":"A whole fireworks show per marble.","set":{"cluster":10},"add":{"damage":3,"splash":20}}]}
+  ]},
+ {"id":"jack","name":"Jack Spinner","cost":320,"sprite":"jack","projColor":"#d9dee4",
+  "desc":"Flings eight jacks outward in a ring. Best on corners.",
+  "base":{"kind":"burst","range":75,"cooldown":1.3,"damage":1,"pierce":1,"projSpeed":380,"count":8,"dmgType":"sharp"},
+  "paths":[
+   {"name":"Spin Faster","upgrades":[
+    {"name":"Oiled Axle","cost":200,"desc":"Spins faster.","mul":{"cooldown":0.75}},
+    {"name":"Whirligig","cost":300,"desc":"Spins faster still.","mul":{"cooldown":0.7}},
+    {"name":"Jackstorm","cost":520,"desc":"Twice as many jacks per ring.","mul":{"count":2}},
+    {"name":"Ember Wheel","cost":2600,"desc":"A ring of sparks scorches every doll in range.","set":{"kind":"pulse","dmgType":"blunt","cooldown":0.35,"pierce":60,"pulseColor":"#ff9a3c"}},
+    {"name":"Sun Wheel","cost":12000,"desc":"A blazing wheel with far more heat and reach.","add":{"damage":3,"range":25},"mul":{"cooldown":0.6}}]},
+   {"name":"Reach","upgrades":[
+    {"name":"Longer Throw","cost":100,"desc":"Jacks fly further.","add":{"range":12}},
+    {"name":"Heavy Jacks","cost":230,"desc":"More range, and each jack hits 2 dolls.","add":{"range":12,"pierce":1}},
+    {"name":"Sawblades","cost":650,"desc":"Spinning blades cut through 5 dolls each.","set":{"projSize":6},"add":{"pierce":3}},
+    {"name":"Buzz Maelstrom","cost":2700,"desc":"Twice the blades, thrown faster.","mul":{"count":2,"cooldown":0.6},"add":{"pierce":4}},
+    {"name":"Iron Hurricane","cost":14000,"desc":"A wall of blades.","mul":{"count":2,"cooldown":0.6},"add":{"damage":2}}]},
+   {"name":"Hot Metal","upgrades":[
+    {"name":"Heated Jacks","cost":180,"desc":"Hot jacks hurt every kind of doll.","set":{"dmgType":"blunt"}},
+    {"name":"Barbed Jacks","cost":600,"desc":"Each jack cracks 2 layers.","add":{"damage":1}},
+    {"name":"Double Ring","cost":900,"desc":"Twice as many jacks per ring.","mul":{"count":2}},
+    {"name":"Molten Core","cost":3000,"desc":"Jacks crack 4 layers and hit 3 more dolls.","add":{"damage":2,"pierce":2}},
+    {"name":"Forge Star","cost":11000,"desc":"White-hot jacks that melt through crowds.","add":{"damage":5,"pierce":5},"mul":{"cooldown":0.7}}]}
+  ]},
+ {"id":"archer","name":"Spyglass Archer","cost":380,"sprite":"archer","projColor":"#f6f1d5",
+  "desc":"Hits any doll on the map, one at a time, for 2 layers.",
+  "base":{"kind":"shot","range":2000,"cooldown":2.0,"damage":2,"pierce":1,"hitscan":true,"dmgType":"sharp"},
+  "paths":[
+   {"name":"Heavy Bolt","upgrades":[
+    {"name":"Barbed Bolt","cost":350,"desc":"Cracks 4 layers.","add":{"damage":2}},
+    {"name":"Ram Bolt","cost":1800,"desc":"Cracks 7 layers and dents tin.","set":{"dmgType":"blunt"},"add":{"damage":3}},
+    {"name":"Shellsplitter","cost":3200,"desc":"Cracks 18 layers.","add":{"damage":11}},
+    {"name":"Heartseeker","cost":9000,"desc":"Cracks 60 layers per bolt.","add":{"damage":42}},
+    {"name":"Kingbreaker","cost":22000,"desc":"Built to bring down the largest dolls.","add":{"damage":190,"bossDmg":250}}]},
+   {"name":"Drill","upgrades":[
+    {"name":"Quick Draw","cost":380,"desc":"Shoots faster.","mul":{"cooldown":0.7}},
+    {"name":"Light Trigger","cost":420,"desc":"Shoots faster still.","mul":{"cooldown":0.8}},
+    {"name":"Repeater","cost":3000,"desc":"Shoots three times as fast.","mul":{"cooldown":0.35}},
+    {"name":"Twin Repeater","cost":8000,"desc":"Twice as fast again, with heavier bolts.","mul":{"cooldown":0.5},"add":{"damage":2}},
+    {"name":"Gatling Crossbow","cost":20000,"desc":"A constant hail of bolts.","mul":{"cooldown":0.4},"add":{"damage":3}}]},
+   {"name":"Scout","upgrades":[
+    {"name":"Moonlit Lens","cost":250,"desc":"Can see veiled dolls.","set":{"seeVeiled":true}},
+    {"name":"Marked Prey","cost":500,"desc":"Extra damage to the giant dolls.","add":{"bossDmg":6}},
+    {"name":"Splinter Bolt","cost":2200,"desc":"Bolts burst and hit nearby dolls.","set":{"splash":30}},
+    {"name":"Signal Flare","cost":5500,"desc":"Bigger bursts that hit giants harder.","add":{"splash":25,"bossDmg":25}},
+    {"name":"Meteor Bolt","cost":14000,"desc":"Each bolt lands like a meteor shower.","set":{"cluster":6},"add":{"splash":30,"damage":12}}]}
+  ]},
+ {"id":"popcorn","name":"Popcorn Cannon","cost":600,"sprite":"popcorn","projColor":"#fff3c4",
+  "desc":"Lobs a kernel that bursts, cracking every doll nearby.",
+  "base":{"kind":"shot","range":120,"cooldown":1.5,"damage":1,"pierce":1,"projSpeed":380,"splash":38,"dmgType":"blast"},
+  "paths":[
+   {"name":"Bigger Pop","upgrades":[
+    {"name":"Extra Kernels","cost":350,"desc":"Bigger burst.","add":{"splash":12}},
+    {"name":"Butter Blast","cost":300,"desc":"Bigger burst and more range.","add":{"splash":10,"range":15}},
+    {"name":"Caramel Cluster","cost":850,"desc":"Each burst throws out six smaller bursts.","set":{"cluster":6}},
+    {"name":"Kettle Quake","cost":3000,"desc":"Bursts crack 3 layers over a wider area.","add":{"damage":2,"splash":15}},
+    {"name":"Popocalypse","cost":16000,"desc":"The whole kettle goes up at once.","set":{"cluster":10},"add":{"damage":6,"splash":25}}]},
+   {"name":"Fast Loader","upgrades":[
+    {"name":"Quick Fuse","cost":350,"desc":"Fires faster.","mul":{"cooldown":0.75}},
+    {"name":"Hot Oil","cost":250,"desc":"Kernels fly faster and further.","mul":{"projSpeed":1.5},"add":{"range":20}},
+    {"name":"Shell Cracker","cost":950,"desc":"Extra damage to the giant dolls.","add":{"bossDmg":10}},
+    {"name":"Babushka Buster","cost":3400,"desc":"Much more damage to giants, and fires faster.","add":{"bossDmg":40},"mul":{"cooldown":0.8}},
+    {"name":"Tsar Toppler","cost":18000,"desc":"Tears giant dolls apart.","add":{"bossDmg":250},"mul":{"cooldown":0.6}}]},
+   {"name":"Sticky Batch","upgrades":[
+    {"name":"Caramel Coating","cost":400,"desc":"Bursts slow dolls briefly.","set":{"slow":0.3,"slowDur":2}},
+    {"name":"Spotter Scope","cost":350,"desc":"Can see veiled dolls. More range.","set":{"seeVeiled":true},"add":{"range":15}},
+    {"name":"Molasses Bomb","cost":1500,"desc":"A much stronger, longer slow.","set":{"slow":0.6,"slowDur":4}},
+    {"name":"Toffee Tar Pit","cost":4200,"desc":"Slows even the giants.","set":{"slow":0.8,"affectHeavy":true},"add":{"splash":15}},
+    {"name":"Sugar Glacier","cost":12000,"desc":"Bursts freeze dolls solid for a moment.","set":{"freeze":1.2,"slow":0.9},"add":{"damage":2}}]}
+  ]},
+ {"id":"globe","name":"Snow Globe","cost":380,"sprite":"globe","pulseColor":"#bfe9ff",
+  "desc":"Shakes out a flurry that freezes nearby dolls in place.",
+  "base":{"kind":"pulse","range":70,"cooldown":2.4,"damage":0,"pierce":40,"freeze":1.3,"dmgType":"cold"},
+  "paths":[
+   {"name":"Deep Winter","upgrades":[
+    {"name":"Hard Frost","cost":200,"desc":"Dolls stay frozen longer.","add":{"freeze":0.7}},
+    {"name":"Brittle Ice","cost":380,"desc":"Freezing cracks a layer.","add":{"damage":1}},
+    {"name":"Long Night","cost":2500,"desc":"Wider flurries, more often.","mul":{"range":1.3,"cooldown":0.7}},
+    {"name":"Glacier Heart","cost":5000,"desc":"Cracks 3 more layers and freezes longer.","add":{"damage":3,"freeze":1}},
+    {"name":"Eternal Winter","cost":18000,"desc":"Freezes even the giants and shatters deep.","set":{"freezeHeavy":true},"add":{"damage":8},"mul":{"cooldown":0.6}}]},
+   {"name":"Wide Winter","upgrades":[
+    {"name":"Wider Globe","cost":150,"desc":"More range.","add":{"range":18}},
+    {"name":"Lingering Chill","cost":320,"desc":"Dolls stay slowed after they thaw.","set":{"slow":0.5,"slowDur":2.5}},
+    {"name":"Cold Front","cost":1800,"desc":"More range, faster flurries.","add":{"range":25},"mul":{"cooldown":0.75}},
+    {"name":"Absolute Stillness","cost":4000,"desc":"Huge range. Freezes giants too.","set":{"freezeHeavy":true},"add":{"range":35}},
+    {"name":"World Stopper","cost":15000,"desc":"Half the room stands still.","set":{"slow":0.8},"add":{"range":60,"freeze":2}}]},
+   {"name":"Sharp Frost","upgrades":[
+    {"name":"Frost Sight","cost":200,"desc":"Can see veiled dolls.","set":{"seeVeiled":true}},
+    {"name":"Hailstones","cost":450,"desc":"Flurries crack a layer.","add":{"damage":1}},
+    {"name":"Rapid Flurry","cost":1700,"desc":"Flurries nearly twice as often.","mul":{"cooldown":0.55}},
+    {"name":"Icicle Storm","cost":5200,"desc":"Cracks 3 more layers, faster.","add":{"damage":3},"mul":{"cooldown":0.7}},
+    {"name":"Avalanche","cost":17000,"desc":"Buries everything nearby.","add":{"damage":10,"range":20},"mul":{"cooldown":0.6}}]}
+  ]},
+ {"id":"honey","name":"Honey Pot","cost":280,"sprite":"honey","projColor":"#f0a830",
+  "desc":"Flings honey that slows a doll, and every doll inside it.",
+  "base":{"kind":"shot","range":110,"cooldown":1.1,"damage":0,"pierce":1,"projSpeed":420,"slow":0.5,"slowDur":4,"dmgType":"sticky"},
+  "paths":[
+   {"name":"Thick Honey","upgrades":[
+    {"name":"Slow Soak","cost":180,"desc":"Honey lasts twice as long.","add":{"slowDur":4}},
+    {"name":"Stinging Honey","cost":320,"desc":"Bees crack a layer every 2 seconds.","set":{"dotInterval":2}},
+    {"name":"Bee Swarm","cost":2800,"desc":"Bees crack layers three times as fast.","set":{"dotInterval":0.6}},
+    {"name":"Queen's Wrath","cost":9000,"desc":"A furious swarm. Sticks to giants too.","set":{"dotInterval":0.2,"affectHeavy":true}},
+    {"name":"Hive Mind","cost":24000,"desc":"The swarm never stops stinging.","set":{"dotInterval":0.06}}]},
+   {"name":"Splatter","upgrades":[
+    {"name":"Stickier","cost":130,"desc":"Slows dolls more.","set":{"slow":0.65}},
+    {"name":"Big Dollop","cost":1800,"desc":"Honey splashes over nearby dolls.","set":{"splash":40}},
+    {"name":"Honey Hose","cost":2600,"desc":"Pours three times as fast.","mul":{"cooldown":0.33}},
+    {"name":"Amber Trap","cost":4500,"desc":"Dolls barely move. Bigger splash.","set":{"slow":0.85},"add":{"splash":20}},
+    {"name":"Golden Flood","cost":13000,"desc":"Coats everything, giants included.","set":{"slow":0.9,"affectHeavy":true},"add":{"splash":40},"mul":{"cooldown":0.5}}]},
+   {"name":"Wild Bees","upgrades":[
+    {"name":"Scout Bees","cost":200,"desc":"Can see veiled dolls. More range.","set":{"seeVeiled":true},"add":{"range":15}},
+    {"name":"Long Pour","cost":240,"desc":"More range and faster honey.","add":{"range":30},"mul":{"projSpeed":1.3}},
+    {"name":"Hive Guard","cost":1400,"desc":"Each dollop cracks a layer.","add":{"damage":1}},
+    {"name":"Royal Jelly","cost":5000,"desc":"Cracks 3 layers, hurts and slows giants.","set":{"affectHeavy":true},"add":{"damage":2,"bossDmg":8}},
+    {"name":"Bear Trap Batch","cost":15000,"desc":"Heavy dollops that maul giant dolls.","add":{"damage":6,"bossDmg":40},"mul":{"cooldown":0.6}}]}
+  ]},
+ {"id":"music","name":"Music Box Mage","cost":550,"sprite":"music","projColor":"#c9a2ff",
+  "desc":"Plays enchanted notes that pass through 2 dolls of any kind.",
+  "base":{"kind":"shot","range":105,"cooldown":1.1,"damage":1,"pierce":2,"projSpeed":400,"dmgType":"arcane"},
+  "paths":[
+   {"name":"Crescendo","upgrades":[
+    {"name":"Sharp Notes","cost":280,"desc":"Notes pass through 5 dolls.","add":{"pierce":3}},
+    {"name":"Thunder Chord","cost":1100,"desc":"Notes leap from doll to doll.","set":{"chain":true},"add":{"pierce":6}},
+    {"name":"Whirlwind Waltz","cost":1900,"desc":"Notes blow dolls back down the track.","set":{"knockback":50}},
+    {"name":"Grand Finale","cost":7500,"desc":"Louder, faster, and through 20 more dolls.","add":{"damage":2,"pierce":20},"mul":{"cooldown":0.6}},
+    {"name":"Storm Conductor","cost":20000,"desc":"A lightning storm in every bar.","add":{"damage":6,"pierce":40},"mul":{"cooldown":0.5}}]},
+   {"name":"Sight Reading","upgrades":[
+    {"name":"Tuning Fork","cost":250,"desc":"More range.","add":{"range":20}},
+    {"name":"True Hearing","cost":300,"desc":"Can see veiled dolls.","set":{"seeVeiled":true}},
+    {"name":"Seeking Notes","cost":1500,"desc":"Two notes that chase dolls.","set":{"homing":true,"count":2,"spread":20}},
+    {"name":"Phoenix Aria","cost":5200,"desc":"Four stronger notes, played faster.","set":{"count":4,"spread":40},"add":{"damage":1},"mul":{"cooldown":0.6}},
+    {"name":"Choir of Comets","cost":18000,"desc":"Eight blazing notes at a time.","set":{"count":8,"spread":80},"add":{"damage":3},"mul":{"cooldown":0.6}}]},
+   {"name":"Percussion","upgrades":[
+    {"name":"Drum Roll","cost":300,"desc":"Plays faster.","mul":{"cooldown":0.8}},
+    {"name":"Cymbal Crash","cost":900,"desc":"Notes burst on impact.","set":{"splash":28}},
+    {"name":"Bass Drop","cost":2400,"desc":"Bigger, harder bursts.","add":{"splash":18,"damage":1}},
+    {"name":"Earthshaker","cost":8000,"desc":"Bursts stun dolls briefly.","set":{"freeze":0.6},"add":{"splash":20,"damage":2}},
+    {"name":"Worldsong","cost":22000,"desc":"Stuns giants. Each beat hits like a drum the size of a house.","set":{"freezeHeavy":true},"add":{"damage":8,"splash":30},"mul":{"cooldown":0.7}}]}
+  ]},
+ {"id":"piggy","name":"Piggy Bank","cost":900,"sprite":"piggy",
+  "desc":"Does not attack. Pays out 80 coins at the end of every round.",
+  "base":{"kind":"income","range":0,"income":80},
+  "paths":[
+   {"name":"Savings","upgrades":[
+    {"name":"Loose Change","cost":350,"desc":"+40 coins per round.","add":{"income":40}},
+    {"name":"Coin Rolls","cost":1200,"desc":"+80 coins per round.","add":{"income":80}},
+    {"name":"Gold Ingots","cost":3000,"desc":"+300 coins per round.","add":{"income":300}},
+    {"name":"Royal Mint","cost":13000,"desc":"+1200 coins per round.","add":{"income":1200}},
+    {"name":"Treasury of Toys","cost":50000,"desc":"+5000 coins per round.","add":{"income":5000}}]},
+   {"name":"Thrift","upgrades":[
+    {"name":"Lucky Pennies","cost":600,"desc":"+60 coins per round.","add":{"income":60}},
+    {"name":"Compound Interest","cost":2600,"desc":"Earns 3% of your coins each round (up to 3000).","add":{"interest":0.03}},
+    {"name":"Investor","cost":5000,"desc":"Interest rises to 6%.","add":{"interest":0.03}},
+    {"name":"Dragon's Hoard","cost":12000,"desc":"Interest rises to 10%, +400 coins per round.","add":{"interest":0.04,"income":400}},
+    {"name":"Endless Vault","cost":40000,"desc":"Interest rises to 20%.","add":{"interest":0.1}}]},
+   {"name":"Safety Net","upgrades":[
+    {"name":"Bandage Box","cost":400,"desc":"+2 lives per round.","add":{"lifeGain":2}},
+    {"name":"Night Watch","cost":900,"desc":"+4 more lives per round.","add":{"lifeGain":4}},
+    {"name":"Insurance","cost":2600,"desc":"+10 more lives and +100 coins per round.","add":{"lifeGain":10,"income":100}},
+    {"name":"Guardian Fund","cost":7000,"desc":"+25 more lives and +300 coins per round.","add":{"lifeGain":25,"income":300}},
+    {"name":"Second Chances","cost":25000,"desc":"+100 more lives and +1000 coins per round.","add":{"lifeGain":100,"income":1000}}]}
+  ]}
+]

@@ -1,0 +1,14 @@
+{
+  "peg":       { "name": "Peg",       "color": "#e2574c", "trim": "#8f2a22", "speed": 55,  "hp": 1,   "size": 10, "children": [] },
+  "bobbin":    { "name": "Bobbin",    "color": "#4c8fe2", "trim": "#1f4f94", "speed": 70,  "hp": 1,   "size": 11, "children": ["peg"] },
+  "trinket":   { "name": "Trinket",   "color": "#58b368", "trim": "#256b33", "speed": 90,  "hp": 1,   "size": 12, "children": ["bobbin"] },
+  "jester":    { "name": "Jester",    "color": "#f2c94c", "trim": "#a8791a", "speed": 120, "hp": 1,   "size": 12, "children": ["trinket"] },
+  "matron":    { "name": "Matron",    "color": "#e77fb3", "trim": "#9c2f68", "speed": 140, "hp": 1,   "size": 13, "children": ["jester"] },
+  "tin":       { "name": "Tin Doll",  "color": "#9aa5b1", "trim": "#4d5863", "speed": 85,  "hp": 1,   "size": 14, "children": ["matron", "matron"], "immune": ["sharp"], "style": "tin" },
+  "plush":     { "name": "Plush Doll","color": "#b98b5e", "trim": "#6b4623", "speed": 90,  "hp": 1,   "size": 14, "children": ["matron", "matron"], "immune": ["blast"], "style": "plush" },
+  "frostling": { "name": "Frostling", "color": "#cfeaf7", "trim": "#5aa3c7", "speed": 100, "hp": 1,   "size": 14, "children": ["matron", "matron"], "immune": ["cold"], "style": "frost" },
+  "harlequin": { "name": "Harlequin", "color": "#7a4fc9", "trim": "#f2c94c", "speed": 110, "hp": 1,   "size": 15, "children": ["tin", "frostling"], "style": "harlequin" },
+  "porcelain": { "name": "Porcelain", "color": "#f5efe6", "trim": "#3567b5", "speed": 100, "hp": 10,  "size": 16, "children": ["harlequin", "harlequin"], "style": "porcelain" },
+  "babushka":  { "name": "Grand Babushka", "color": "#b5342b", "trim": "#f2c94c", "speed": 34, "hp": 150, "size": 28, "children": ["harlequin", "harlequin", "harlequin", "harlequin"], "heavy": true, "style": "boss" },
+  "tsarina":   { "name": "The Tsarina",    "color": "#2c2f6b", "trim": "#f2c94c", "speed": 22, "hp": 600, "size": 40, "children": ["babushka", "babushka", "babushka"], "heavy": true, "style": "boss" }
+}

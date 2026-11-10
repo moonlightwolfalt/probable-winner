@@ -33,4 +33,4 @@ warnings.log
 # Bun
 node_modules/
 game/dist/
-data/
+/data/

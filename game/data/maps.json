@@ -1,0 +1,8 @@
+[
+  { "id": "workbench", "name": "The Workbench", "difficulty": "Easy", "costScale": 0.6, "theme": "wood",
+    "path": [[-30,120],[620,120],[620,260],[160,260],[160,420],[700,420],[700,630]] },
+  { "id": "attic", "name": "Attic Spiral", "difficulty": "Medium", "costScale": 0.7, "theme": "attic",
+    "path": [[-30,70],[720,70],[720,530],[90,530],[90,210],[560,210],[560,390],[270,390]] },
+  { "id": "quilt", "name": "Quilt Crossing", "difficulty": "Hard", "costScale": 0.8, "theme": "quilt",
+    "path": [[-30,460],[250,460],[250,140],[550,140],[550,460],[830,460]] }
+]
